@@ -9,12 +9,7 @@
 <body>
   <div class="site-wrap">
     <header class="top-bar">
-      <a href="index.html">메인</a>
-      <a href="aboutMe.html">자기소개</a>
+      <a href="index.ssg.php">메인</a>
+      <a href="aboutMe.ssg.php">자기소개</a>
     </header>
-    <main><h1>메인</h1>
-</main>
-    <footer class="bottom-ar"></footer>
-  </div>
-</body>
-</html>
+    <main>
