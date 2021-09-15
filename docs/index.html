@@ -1,20 +1,479 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Designer Hzeong Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <!-- 라이브러리 시작 -->
+
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 이미지 loaded -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+
+  <!-- full page css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+  <!-- full page js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <!-- full page scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
+
+  <!-- 스와이퍼 -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+  <!-- 라이트박스 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+  <!-- 라이브러리 끝 -->
+
+  <!-- 커스텀 시작 -->
+
+  <!-- 로딩 시작 -->
+  <div class="loading"></div>
+  <!-- 로딩 끝 -->
 </head>
+
 <body>
-  <div class="site-wrap">
-    <header class="top-bar">
-      <a href="index.html">메인</a>
-      <a href="aboutMe.html">자기소개</a>
-    </header>
-    <main><h1>메인</h1>
-</main>
-    <footer class="bottom-ar"></footer>
+  <!-- 탑바 시작 -->
+  <div class="top-bar fixed top-0 left-0 w-full z-50 con-min-width">
+    <div class="con-max-width h-full">
+      <div class="con h-full flex">
+        <a href="#" class="top-bar__logo px-2 flex items-center"><img src="https://i.postimg.cc/k5PHZP1b/sss-1.png"
+            alt=""></a>
+
+        <div class="flex-grow"></div>
+
+        <nav class="menu-box-1 flex font-bold">
+          <ul class="flex">
+            <li data-menuanchor="section-1" class="active">
+              <a href="#section-1">
+                <span>HOME</span>
+                <div class="bg background-position-m20px-30p background-size-140px-80px"></div>
+              </a>
+            </li>
+            <li data-menuanchor="section-2">
+              <a href="#section-2">
+                <span>ABOUT</span>
+                <div class="bg background-position-m20px-30p background-size-150px-80px"></div>
+              </a>
+            </li>
+            <li data-menuanchor="section-3">
+              <a href="#section-3">
+                <span>EXPERIENCE</span>
+                <div class="bg background-position-m30px-30p background-size-230px-80px"></div>
+              </a>
+            </li>
+            <li data-menuanchor="section-4">
+              <a href="#section-4">
+                <span>PORTFOLIO(WEB)</span>
+                <div class="bg background-position-m40px-30p background-size-290px-80px"></div>
+              </a>
+            </li>
+            <li data-menuanchor="section-5">
+              <a href="#section-5">
+                <span>PORTFOLIO(Etc.)</span>
+                <div class="bg background-position-m40px-30p background-size-290px-80px"></div>
+              </a>
+            </li>
+            <li data-menuanchor="section-6">
+              <a href="#section-6">
+                <span>CONTACT</span>
+                <div class="bg background-position-m20px-30p background-size-180px-80px"></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- 탑바 끝 -->
+
+  <div id="fullpage">
+    <section class="section section-1" data-anchor="section-1">
+      <div class="inner-wrap">
+        <div class="inner">
+          <div class="con flex">
+            <div class="section-1_item1 img-box absolute"><img src="https://i.postimg.cc/MTxCWf4p/pngwing.png" alt="">
+            </div>
+            <div class="section-1_item2 img-box absolute"><img src="https://i.postimg.cc/hvtNmWKF/4-1.png" alt=""></div>
+            <div class="section-1_item3 img-box absolute"><img src="https://i.postimg.cc/43CCSSQt/1.png" alt=""></div>
+            <div class="section-1_item4 img-box absolute"><img src="https://i.postimg.cc/4d5rnNkb/Untitled-3-1.png"
+                alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-2" data-anchor="section-2">
+      <div class="inner-wrap no-padding-top">
+        <div class="inner">
+          <div class="con">
+            <div class="section-2_bg1 img-box"><img src="https://i.postimg.cc/m286Zdm7/pngwing.png" alt=""></div>
+            <div class="section-2_bg2 img-box"><img src="https://i.postimg.cc/T2QcnKn6/1.png" alt=""></div>
+            <div class="relative">
+              <div class="section-2_item1 img-box mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.03"
+                data-mousemove-effect1-ver-res="0.02"><img src="https://i.postimg.cc/XqtRsdth/333-1.png" alt=""></div>
+              <div class="section-2_item2 img-box mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.01"
+                data-mousemove-effect1-ver-res="0.03"><img src="https://i.postimg.cc/B6791dpJ/Vector-31.png" alt="">
+              </div>
+              <div class="section-2_item3 img-box mousemove-effect-1-el" data-mousemove-effect1-hor-res="0.01"
+                data-mousemove-effect1-ver-res="0.02"><img src="https://i.postimg.cc/HnJG0BvX/pngwing.png" alt=""></div>
+            </div>
+
+            <div class="section-2_text flex">
+              <div class="section-2_text1">
+                <ul>
+                  <li class="title">PROFILE</li>
+                  <li class="text1">NAME 김현정</li>
+                  <li class="text1">AGES 25/971*1*</li>
+                  <li class="text1">ADDRESS 대전광역시</li>
+                  <li class="text1">EMAIL hzeong66@gmail.com</li>
+                </ul>
+              </div>
+              <div class="section-2_text2">
+                <ul>
+                  <li class="title">LICENCE</li>
+                  <li class="text1">2018.08 JLPT N2</li>
+                  <li class="text1">2021.07.16 웹디자인 기능사 필기</li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-2_text3">
+              <ul>
+                <li class="section-2_text3-1 title">POSITIVE <span style="color:#FFD027;">MINE</span>. POSITIVE <span
+                    style="color:#002DCE;">VIBES</span>.</li>
+                <li class="section-2_text3-2 title">POSITIVE <span style="color:#D800FB;">LIFE</span>.</li>
+              </ul>
+            </div>
+            <div class="section-2_text4">
+              <ul>
+                <li class="section-2_text4-1 text2">좋은 에너지로 주변을 물들이는 <span
+                    style="color:#590BFF; font-size:1.8rem;">웹디자이너 김현정</span>입니다.</li>
+                <li class="section-2_text4-2 text2">항상 밝은 미소와 긍정적인 마인드로 열심히 배우고 최선을 다하겠습니다.</li>
+              </ul>
+            </div>
+            <div class="section-2_text5">
+              <ul>
+                <li class="title">SKILLS</li>
+                <li>
+                  <div class="section-2_item4 img-box"><img src="https://i.postimg.cc/fT97ttCx/Group-99.png" alt="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-3" data-anchor="section-3">
+      <div class="inner-wrap">
+        <div class="inner">
+          <div class="con">
+            <div class="section-3_bg1">
+              EXPERIENCE
+            </div>
+            <div class="section-3_text2 flex">
+              <ul>
+                <li class="section-3_text2-1">Nothing Ventured,</li>
+                <li class="section-3_text2-2">Nothing Gained.</li>
+              </ul>
+            </div>
+            <div class="section-3_bg2">
+              <div class="section-3_bg2-1 img-box"><img src="https://i.postimg.cc/cJtw38cQ/Group-116-1.png" alt="">
+              </div>
+              <div class="section-3_bg2_text"><a href="">
+                  어릴 때 일본어에 관심이 생겨서 친구를 만들기 위해 펜팔을 시작하게 되었고,
+                  <br>
+                  그 일을 계기로 첫 해외여행을 혼자서 일본으로 가게 되었습니다.
+                  <br>
+                  어린 나이로 두려움도 많았지만, 도전에 망설임이 없는 저는 자립심과 모험심과
+                  <br>
+                  해결 능력을 키우는 좋은 경험을 할 수 있었습니다.
+                  <br>
+                  그리고 이 일을 계기로 세계 각국의 친구들이 생기게 되었습니다.
+                </a></div>
+            </div>
+            <div class="section-3_bg3">
+              <div class="section-3_bg3-1 img-box"><img src="https://i.postimg.cc/bvv8VQ5t/Group-117.png" alt=""></div>
+              <div class="section-3_bg3_text">
+                고등학교 1학년 때 스리랑카로 해외봉사를 가게되었습니다.
+                <br>
+                여러가지 일을 했지만, 현지 아이들과 같이 어울러져 놀기도하고 학습하기도 하는 시간이 있었습니다.
+                <br>
+                분명 저는 그들을 도우러 갔다고 생각했는데, 어려운 환경 속에서도 해맑게 웃으며 작은것 하나에도
+                <br>
+                행복해하는 아이들을 보고 나의 보통의 삶이 선물받은 것 같았습니다.
+                <br>
+                그렇게 내 삶의 또 하나의 도전으로 누군가의 삶에 감동을 줄 수 있는 삶을 살기로 결심하게 되었습니다.
+              </div>
+            </div>
+            <div class="section-3_bg4">
+              <div class="section-3_bg4-1 img-box"><img src="https://i.postimg.cc/jSKFZt1w/Group-118-1.png" alt="">
+              </div>
+              <div class="section-3_bg4_text">
+                고등학교 2학년 때
+                <br>
+                또 다른 도전으로 교육청에서 주관하는 전국단위의 한일 문화 교류단에 신청하여 선발되었습니다.
+                <br>
+                전국단위의 학생들과 만날 수 있고 일본에서 문화체험의 기회까지 주어지니 너무나 좋은 기회였습니다.
+                <br>
+                많은 아이들과 함께 시간을 보내며 이타심과 타협심을 기를 수 있었고,
+                <br>
+                낯선 곳에서 적응하며 사회의일원으로써의 훈련을 하였습니다.
+              </div>
+
+              <div class="section-3_bg5">
+                <div class="section-3_bg5-1 img-box"><img src="https://i.postimg.cc/mkrvdVqz/Group-119.png" alt="">
+                </div>
+                <div class="section-3_bg5_title img-box"><img
+                    src="https://i.postimg.cc/jd4YPmv2/section-3-last-title.png" alt=""></div>
+                <div class="section-3_bg5_text">
+                  일본어를 배우기 시작하면서 언젠가 꼭 일본에서 살아야겠다고 생각을 했었습니다.
+                  <br>
+                  그렇게 대학생이 되었고, 열심히 자격을 충족시켜 캠퍼스 내에서 2명 선발되는 곳에 합격되어 꿈에 그리던 일본 생활을 하게되었습니다.
+                  <br>
+                  타국에서 혼자 사는 것은 처음이었기 때문에 외롭기도 하고 힘들기도 했지만, 한일 문화 교류단을 통해 새로운 곳에서 새로운 사람들과 지내는 법을 배웠었고,
+                  <br>
+                  해외 봉사를 동해 타인을 이해하고 배려하며 살아가는 것을 배웠기에 누구보다 값진 시간들을 경험 하고 올 수 있었습니다.
+                  <br>
+                  나만의 모험심과 자립심으로 시작된 일본어의 배움이 이렇게 이루어지는 것을 보면서
+                  <br>
+                  살아오며 많은 도전을 했고, 이루어 냈지만 이제 나는 앞으로 또 하나의 웹 디자이너라는 꿈을 향해 수없이 경험하고 도전해 보려고 합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-4" data-anchor="section-4">
+      <div class="inner-wrap">
+        <div class="inner con-max-width">
+          <div class="section-4_bg">
+            <div class="con">
+              <div class="section-4_text">
+                <div class="section-4_title">
+                  <ul>
+                    <li class="title">WEB DESIGN</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section-4_mid flex">
+                <div class="section-4_mid_img">
+                  <div class="mokup img-box"><img src="https://i.postimg.cc/W4wPGDK3/Apple-i-Mac-27-Mockup.png" alt="">
+                  </div>
+                </div>
+                <div class="section-4_mid_text">
+                  <div class="mid_text1">
+                    <div class="title">
+                      <ul>
+                        <li>PERSONAL WEB SITE</li>
+                      </ul>
+                    </div>
+                    <div class="text2">
+                      <ul>
+                        <li>나의 이야기를 들려주고 보여줄 수 있는 개성 넘치는 나만의 웹 페이지.</li>
+                        <br>
+                        <li>저만의 독특하고 색다른 이야기가 궁금하시다면 클릭해서 저의 동화 속
+                          <br>
+                          주인공으로 함께해주세요.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mid_text2 flex flex-wrap">
+                    <div class="text2-1 w-full">
+                      <ul class="flex">
+                        <li class="title1">PROJECT :</li>
+                        <li class="text5 self-center"> &nbsp PERSONAL WEB DESIGN</li>
+                      </ul>
+                    </div>
+                    <div class="text2-2 flex-half">
+                      <ul>
+                        <li class="title1">PARTICIPATION IN WORK</li>
+                        <li class="text3">기획:100% 디자인:100% 코딩:100%</li>
+                      </ul>
+                    </div>
+                    <div class="text2-3 flex-half">
+                      <ul class="flex">
+                        <li class="title1">PERIOD :</li>
+                        <li class="text5 self-center"> &nbsp 4 WEEKS</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mid_button flex">
+                    <div class="mid_button_left text2">
+                      <a href="">PROCESS VIEW</a>
+                    </div>
+                    <div class="mid_button_right text2">
+                      <a href="">DEGISN VIEW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-5" data-anchor="section-5">
+      <div class="inner-wrap">
+        <div class="inner">
+          <div class="con">
+            <div class="section-5_bg">
+              <div class="section-5_title">
+                <ul>
+                  <li class="title">Etc.</li>
+                </ul>
+              </div>
+              <div class="section-5_text flex-col">
+                <div class="flex">
+                  <div class="no1">
+                    <a href="https://picsum.photos/536/354" data-lightbox="image-1" data-title="" class="pf-box"><img
+                        src="https://i.postimg.cc/Hn2dZCpq/pf-1.png" alt=""></a>
+                    <div class="section-5_text1">
+                      <ul>
+                        <li class="title1">서브웨이 앱 리디자인</li>
+                        <li class="text3">서브웨이 앱 리디자인을 해보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="no2">
+                    <a href="https://i.postimg.cc/yY1VJWjs/pf-2.png" data-lightbox="image-2" data-title=""
+                      class="pf-box"><img src="https://i.postimg.cc/yY1VJWjs/pf-2.png" alt=""></a>
+                    <div class="section-5_text2">
+                      <ul>
+                        <li class="title1">일룸 앱 디자인</li>
+                        <li class="text3">일룸 앱 디자인을 해보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="no3">
+                    <a href="https://i.postimg.cc/0yrPf3h4/pf-3.png" data-lightbox="image-3" data-title=""
+                      class="pf-box"><img src="https://i.postimg.cc/0yrPf3h4/pf-3.png" alt=""></a>
+                    <div class="section-5_text3">
+                      <ul>
+                        <li class="title1">포트폴리오 시안</li>
+                        <li class="text3">포트폴리오 시안을 만들어보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="no4">
+                    <a href="https://i.postimg.cc/jdMRyK3N/pf-4.png" data-lightbox="image-4" data-title=""
+                      class="pf-box"><img src="https://i.postimg.cc/jdMRyK3N/pf-4.png" alt=""></a>
+                    <div class="section-5_text4">
+                      <ul>
+                        <li class="title1">포트폴리오 시안</li>
+                        <li class="text3">포트폴리오 시안을 만들어보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="no5">
+                    <a href="https://i.postimg.cc/zfg5mhzS/pf-5.png" data-lightbox="image-5" data-title=""
+                      class="pf-box"><img src="https://i.postimg.cc/zfg5mhzS/pf-5.png" alt=""></a>
+                    <div class="section-5_text5">
+                      <ul>
+                        <li class="title1">지킬앤하이드 포스터 리디자인</li>
+                        <li class="text3">뮤지컬 포스터 리디자인을 해보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="no6">
+                    <a href="https://i.postimg.cc/YCVkyRHC/pf-6.png" data-lightbox="image-6" data-title=""
+                      class="pf-box"><img src="https://i.postimg.cc/YCVkyRHC/pf-6.png" alt=""></a>
+                    <div class="section-5_text6">
+                      <ul>
+                        <li class="title1">돗자리 영화제 포스터 리디자인</li>
+                        <li class="text3">영화제 포스터 리디자인을 해보았습니다.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-6" data-anchor="section-6">
+      <div class="inner-wrap">
+        <div class="inner">
+          <div class="con">
+            <div class="flex">
+              <div class="section-6_box">
+                <div class="section-6_mid-text">
+                  <div class="mail-box" style="width:560px; height:500px;">
+                    <div class="mail-box_text">
+                      <div class="mail-box_text1 title">CONTACT. HZEONG 현정</div>
+                      <div class="mail-box_text2">
+                        <ul>
+                          <li><span class="font-bold">mobile</span><span class="ml-2">+82 10-0000-0000</span></li>
+                          <li><span class="font-bold">MAIL</span><span class="ml-2">hzeong@gmail.com</span></li>
+                          <li><span class="font-bold">LIVE IN</span><span class="ml-2">SOUTH KOREA</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <form action="" class="flex flex-wrap mt-20 gap-3">
+                      <textarea class="w-full rounded p-4" style="border:2px dashed black; outline:0;" rows="10"
+                        placeholder="CONTENT"></textarea>
+                      <input type="text" class="w-40 rounded p-4" style="border:2px dashed black; outline:0;"
+                        placeholder="NAME">
+                      <input type="text" class="flex-grow rounded p-4" style="border:2px dashed black; outline:0;"
+                        placeholder="E-MAIL">
+                      <div class="w-full flex justify-end">
+                        <button type="submit" class="submit">submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="section-6_right flex flex-col">
+                <div class="section-6_text">
+                  <ul>
+                    <li class="section-6_text1 text2">저의 <span style="font-size:30px;">작은 전시회</span>에 함께해주셔서 감사합니다.
+                      <br>
+                      저의 작품이 맘에 드셨거나 프로젝트를 함께하고 싶으신분은 연락 부탁드립니다.
+                    </li>
+                    <li class="section-6_text2 text2">항상 밝은 미소와 따듯한 마음과 풍부한 아이디어로 함께하며
+                      <br>
+                      다채로운 색을 지닌 웹디자이너가 되겠습니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-grow"></div>
+                <div class="sns flex">
+                  <div class="sns1"><a href=""><img src="https://i.postimg.cc/ZqMXfMPf/pngwing.png" alt=""></a></div>
+                  <div class="sns2"><a href=""><img src="https://i.postimg.cc/fbL6fNdt/pngwing-1.png" alt=""></a></div>
+                  <div class="sns3"><a href=""><img
+                        src="chrome://favicon2/?size=24&scale_factor=1x&show_fallback_monogram=&page_url=https%3A%2F%2Fwiken.io%2F"
+                        alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
+
 </html>
