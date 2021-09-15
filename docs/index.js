@@ -14,7 +14,7 @@ function Fullpage__init() {
 
 $("body").imagesLoaded(function () {
   // 이 부분을 0으로 바뀌면 로딩화면이 안보일 때가 있습니다. 억지로라도 로딩화면을 보여주려면 이 부분을 남겨두세요. 500이 적당합니다.
-  const fakeLoadingMilliSeconds = 0;
+  const fakeLoadingMilliSeconds = 3000;
   setTimeout(function () {
     Fullpage__init();
     $(".loading").remove();
