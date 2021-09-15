@@ -131,8 +131,6 @@ html {
   z-index: 100;
 }
 
-.loading::after {
-}
 /* 로딩 끝 */
 
 /* 탑바 시작 */
@@ -318,7 +316,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-left: 280px;
   padding-left: 120px;
   padding-top: 30px;
@@ -362,7 +360,7 @@ html {
 
 #fullpage > .section-3 .section-3_bg2-1 {
   position: absolute;
-  top: 600px;
+  top: 650px;
   left: 110px;
   width: 85%;
   z-index: -1;
@@ -377,14 +375,14 @@ html {
 
 #fullpage > .section-3 .section-3_bg3-1 {
   position: absolute;
-  top: 1300px;
+  top: 1550px;
   right: 110px;
   width: 85%;
   z-index: -1;
 }
 
 #fullpage > .section-3 .section-3_bg3_text {
-  margin-top: 560px;
+  margin-top: 790px;
   margin-right: 910px;
   font-size: 21px;
   font-weight: bold;
@@ -393,13 +391,13 @@ html {
 
 #fullpage > .section-3 .section-3_bg4-1 {
   position: absolute;
-  top: 2000px;
+  top: 2550px;
   left: 110px;
   width: 85%;
   z-index: -1;
 }
 #fullpage > .section-3 .section-3_bg4_text {
-  margin-top: 680px;
+  margin-top: 940px;
   margin-left: 880px;
   font-size: 22px;
   font-weight: bold;
@@ -407,24 +405,24 @@ html {
 
 #fullpage > .section-3 .section-3_bg5-1 {
   position: absolute;
-  top: 2950px;
+  top: 3430px;
   width: 100%;
   z-index:-1;
 }
 
 #fullpage > .section-3 .section-3_bg5_title {
-  margin-top: 480px;
+  margin-top: 420px;
   margin-left: 1100px;
   width: 37%;
 }
 
 #fullpage > .section-3 .section-3_bg5_text {
-  margin-top: -70px;
+  margin-top: -20px;
   margin-right: 220px;
   font-size: 22px;
   font-weight: bold;
   text-align: right;
-  margin-bottom:120px;
+  margin-bottom:170px;
 }
 
 /* section-4 */
@@ -466,6 +464,7 @@ html {
 }
 
 #fullpage > .section-4 .mid_button .mid_button_left {
+  position: relative;
   width:160px;
   text-align:center;
   margin-top:50px;
@@ -474,6 +473,32 @@ html {
   padding-bottom:20px;
   border-top:1px solid black;
   border-bottom:1px solid black;
+  z-index: 2;
+}
+
+#fullpage > .section-4 .mid_button .mid_button_left::after {
+  --bg-width:160px;
+  --bg-height:100px;
+  
+  content:"";
+  z-index:1;
+  position:absolute;
+  background-image:url(https://via.placeholder.com/170x100/00FF00);
+  background-position:0 50%;
+  background-size:var(--bg-width) var(--bg-height);
+  height:var(--bg-height);
+  left:calc(50% - var(--bg-width) / 2);
+  top:50%;
+  transform:translateY(-50%);
+  width:0;
+  transition:width 1s;
+
+}
+
+#fullpage > .section-4 .mid_button:hover .mid_button_left::after {
+  --bg-width:150px;
+  
+  width:var(--bg-width);
 }
 
 #fullpage > .section-4 .mid_button .mid_button_right{
@@ -498,7 +523,6 @@ html {
   background-image:url(../docs/images/section-5_bg.png);
   background-repeat:no-repeat;
   background-size:1750px 750px;
-  background-position:;
   width:1920px;
   height:750px;
   margin-top:110px;

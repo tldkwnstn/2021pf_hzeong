@@ -429,15 +429,15 @@
                         </ul>
                       </div>
                     </div>
-                    <form action="" class="flex flex-wrap mt-20 gap-3">
-                      <textarea class="w-full rounded p-4" style="border:2px dashed black; outline:0;" rows="10"
+                    <form  action="https://formspree.io/f/xleaolnr" onsubmit="sendEmailForm(this); return false;" method="POST" class="flex flex-wrap mt-20 gap-3">
+                      <textarea name="message" class="w-full rounded p-4" style="border:2px dashed black; outline:0;" rows="10"
                         placeholder="CONTENT"></textarea>
                       <input type="text" class="w-40 rounded p-4" style="border:2px dashed black; outline:0;"
                         placeholder="NAME">
-                      <input type="text" class="flex-grow rounded p-4" style="border:2px dashed black; outline:0;"
+                      <input name="_replyto" type="text" class="flex-grow rounded p-4" style="border:2px dashed black; outline:0;"
                         placeholder="E-MAIL">
                       <div class="w-full flex justify-end">
-                        <button type="submit" class="submit">submit</button>
+                        <button name="submit" type="submit" class="submit">submit</button>
                       </div>
                     </form>
                   </div>
