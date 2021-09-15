@@ -234,7 +234,7 @@ html {
 #fullpage > .section-2 .section-2_bg1 {
   position: absolute;
   width: 40%;
-  bottom: 90px;
+  bottom: 20px;
   left: 0;
   right: auto;
 }
@@ -314,7 +314,7 @@ html {
 }
 
 #fullpage > .section-3 .section-3_bg1 {
-  background-image: url(https://i.postimg.cc/vThRprs9/1.png);
+  background-image: url(../docs/images/section-3_title-bg.png);
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
@@ -430,7 +430,7 @@ html {
 
 /* section-4 */
 #fullpage > .section-4 {
-  background-image:url(https://i.postimg.cc/vBXVKm6T/Group-121.png);
+  background-image:url(../docs/images/section-4_bg.png);
   background-repeat:no-repeat;
   background-position:center;
   background-size:1920px 100vh;
@@ -496,7 +496,7 @@ html {
 }
 
 #fullpage > .section-5 .inner-wrap .inner .con .section-5_bg{
-  background-image:url(https://i.postimg.cc/BQRQ37R4/Group-122.png);
+  background-image:url(../docs/images/section-5_bg.png);
   background-repeat:no-repeat;
   background-size:1750px 750px;
   background-position:;
@@ -541,7 +541,7 @@ html {
 
 /* section-6 */
 #fullpage > .section-6 {
-  background-image:url(https://i.postimg.cc/rm81s6Tv/section-6-bg.png);
+  background-image:url(../docs/images/section-6_bg.png);
   background-repeat:no-repeat;
   background-position:center;
   background-size:1920px 100vh;
@@ -580,7 +580,7 @@ html {
   align-items:center;
   width:200px;
   height:50px;
-  background-image:url(https://i.postimg.cc/jjh2tpmk/pngwing-1.png);
+  background-image:url(../docs/images/section-6_button.png);
   background-size: 180px;
   background-repeat: no-repeat;
   font-weight:bold;
@@ -611,7 +611,11 @@ html {
 }
 
 #fullpage > .section-6 .section-6_right .sns .sns1{
-  padding:0 10px;
+  padding-right: 10px;
+}  
+
+#fullpage > .section-6 .section-6_right .sns .sns2{
+  padding-right:10px;
 }  
 /* 섹션 끝 */
 
