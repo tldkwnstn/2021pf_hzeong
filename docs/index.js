@@ -78,6 +78,26 @@ function MousemoveEffect1__init() {
 
 MousemoveEffect1__init();
 
+//슬라이더//
+// Initialize Swiper
+var swiper = new Swiper(".slides", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+  delay: 3000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
 // 이메일 발송 폼 //
 function sendEmailForm(form) {
   if ( form._replyto.value.length == 0 ) {

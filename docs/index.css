@@ -427,90 +427,81 @@ html {
 
 /* section-4 */
 #fullpage > .section-4 {
-  background-image:url(images/section-4_bg.png);
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:1920px 100vh;
-  width:1920px;
-  height:100%;
+  background-image: url(https://i.postimg.cc/vBXVKm6T/Group-121.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px 100vh;
+  width: 1920px;
+  height: 100%;
 }
 
 #fullpage > .section-4 .section-4_mid {
-  width:1300px;
-  height:650px;
-  background-color:rgba(225,225,225,0.9);
-  box-shadow:6px 4px 15px rgba(0,0,0,0.5);
-  margin-top:40px;
-  margin-left:auto;
-  margin-right:auto;
-  z-index:1;
-
+  width: 1300px;
+  height: 650px;
+  background-color: rgba(225, 225, 225, 0.9);
+  box-shadow: 6px 4px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }
 
 /* section-4 내용물 */
-#fullpage > .section-4 .section-4_mid_img {
-  margin-top:110px;
-  margin-left:15px;
-}
-
-#fullpage > .section-4 .section-4_title {
+#fullpage > .section-4 .section-4_text {
   margin-top:20px;
-  margin-left:780px;
 }
 
-#fullpage > .section-4 .section-4_mid_text {
-  margin-top:130px;
-  margin-left:40px;
+#fullpage > .section-4 .section-4_mid_img {
+  margin-top: 110px;
+  margin-left: 20px;
+}
+
+#fullpage > .section-4 .slides .swiper-wrapper .swiper-slide .section-4_mid_text {
+  margin-left: 40px;
+}
+
+#fullpage > .section-4 .slides .swiper-wrapper .swiper-slide .section-4_mid_text .mid_text1 .title {
+  text-align:left;
+  margin-top:120px;
+  
+}
+
+#fullpage > .section-4 .slides .swiper-wrapper .swiper-slide .section-4_mid_text .mid_text1 .text2{
+  text-align:left;
+  margin-top:10px;
+}
+
+#fullpage > .section-4 .slides .swiper-wrapper .swiper-slide .section-4_mid_text .mid_text1 .text2 .text2-1 {
+  margin-top:-30px;
+}
+
+#fullpage > .section-4 .slides .swiper-wrapper .swiper-slide .section-4_mid_text .mid_text2 {
+  text-align:left;
 }
 
 #fullpage > .section-4 .mid_button .mid_button_left {
-  position: relative;
-  width:160px;
-  text-align:center;
-  margin-top:50px;
-  margin-left:220px;
-  padding-top:20px;
-  padding-bottom:20px;
-  border-top:1px solid black;
-  border-bottom:1px solid black;
-  z-index: 2;
+  width: 160px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 260px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-#fullpage > .section-4 .mid_button .mid_button_left::after {
-  --bg-width:160px;
-  --bg-height:100px;
-  
-  content:"";
-  z-index:1;
-  position:absolute;
-  background-image:url(https://via.placeholder.com/170x100/00FF00);
-  background-position:0 50%;
-  background-size:var(--bg-width) var(--bg-height);
-  height:var(--bg-height);
-  left:calc(50% - var(--bg-width) / 2);
-  top:50%;
-  transform:translateY(-50%);
-  width:0;
-  transition:width 1s;
-
+#fullpage > .section-4 .mid_button .mid_button_right {
+  width: 160px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-#fullpage > .section-4 .mid_button:hover .mid_button_left::after {
-  --bg-width:150px;
-  
-  width:var(--bg-width);
-}
 
-#fullpage > .section-4 .mid_button .mid_button_right{
-  width:160px;
-  text-align:center;
-  margin-top:50px;
-  margin-left:30px;
-  padding-top:20px;
-  padding-bottom:20px;
-  border-top:1px solid black;
-  border-bottom:1px solid black;
-}
 
 
 /* section-5 */
