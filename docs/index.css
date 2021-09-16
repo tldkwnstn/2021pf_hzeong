@@ -427,7 +427,7 @@ html {
 
 /* section-4 */
 #fullpage > .section-4 {
-  background-image:url(../docs/images/section-4_bg.png);
+  background-image:url(images/section-4_bg.png);
   background-repeat:no-repeat;
   background-position:center;
   background-size:1920px 100vh;
@@ -520,7 +520,7 @@ html {
 }
 
 #fullpage > .section-5 .inner-wrap .inner .con .section-5_bg{
-  background-image:url(../docs/images/section-5_bg.png);
+  background-image:url(images/section-5_bg.png);
   background-repeat:no-repeat;
   background-size:1750px 750px;
   width:1920px;
