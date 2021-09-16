@@ -564,7 +564,7 @@ html {
 
 /* section-6 */
 #fullpage > .section-6 {
-  background-image:url(../docs/images/section-6_bg.png);
+  background-image:url(images/section-6_bg.png);
   background-repeat:no-repeat;
   background-position:center;
   background-size:1920px 100vh;
@@ -603,7 +603,7 @@ html {
   align-items:center;
   width:200px;
   height:50px;
-  background-image:url(../images/section-6_button.png);
+  background-image:url(images/section-6_button.png);
   background-size: 180px;
   background-repeat: no-repeat;
   font-weight:bold;
