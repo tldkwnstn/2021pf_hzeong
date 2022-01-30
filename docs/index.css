@@ -158,7 +158,7 @@ html {
 }
 
 .top-bar .menu-box-1 > ul > li.active > a {
-  color: red;
+  color: white;
   z-index:1;
 }
 
