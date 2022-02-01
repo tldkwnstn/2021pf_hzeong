@@ -460,6 +460,11 @@ html {
   margin-left: 20px;
 }
 
+
+#fullpage > .section-4 .section-4_mid_img .slide3_mokup {
+  margin-left: 50px;
+}
+
 #fullpage > .section-4 .slides .swiper-button-next {
   color: black;
 }
